@@ -1,0 +1,167 @@
+.carousel-control-next{
+    top:23vw;
+    z-index: 15;
+    height: fit-content;
+    justify-content: end;
+    padding-right: 5px;
+}
+.carousel-control-prev{
+    top:23vw;
+    z-index: 15;
+    height: fit-content;
+    justify-content: start;
+    padding-left: 5px;
+}
+
+
+.carousel-control-prev::after,
+.carousel-control-prev::before {
+  content: " ";
+  position: absolute;
+  background-color: rgb(196, 211, 211);
+  z-index: -1;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.carousel-control-prev:hover {
+  animation: notification 2s ease-out infinite;
+}
+
+
+@keyframes notification {
+  100%{
+      opacity: 0;
+      transform: scale(2.5);
+  }
+}
+
+.carousel-control-next::after,
+.carousel-control-next::before {
+  content: " ";
+  position: absolute;
+  background-color: rgb(196, 211, 211);
+  z-index: -1;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.carousel-control-next:hover {
+  animation: notification 2s ease-out infinite;
+}
+
+
+@keyframes notification {
+  100%{
+      opacity: 0;
+      transform: scale(2.5);
+  }
+}
+
+.upperBox{
+  height: 40vw;
+}
+
+
+.carousel{
+  object-fit: cover;
+}
+.textWritten{
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, #FFF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-align: center;
+font-family: IBM Plex Mono;
+ /* 94.286% */
+}
+  
+@media screen and (max-width: 992px) {
+  .carousel{
+    top: 59px;
+  }
+
+}
+  @media screen and (max-width: 479px) {
+    .textWritten {
+        font-style: normal;
+        font-size: 30px;
+    line-height: 32px;
+    }
+    .upperBox{
+      height: 70vw;
+    }
+    .carousel-control-next{
+      top:29vw;
+
+  }
+  .carousel-control-prev{
+      top:29vw;
+
+  }
+  }
+@media screen and  (min-width: 480px) and (max-width: 767px) {
+    .textWritten {
+        font-style: normal;
+        font-weight: 700;
+
+        font-size: 56px;
+    line-height: 57px;
+    }
+    .upperBox{
+      height: 60vw;
+    }
+    .carousel-control-next{
+      top:29vw;
+
+  }
+  .carousel-control-prev{
+      top:29vw;
+
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .textWritten {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 79px;
+        line-height: 77px;
+    }
+    .upperBox{
+      height: 60vw;
+    }
+    .carousel-control-next{
+      top:29vw;
+
+  }
+  .carousel-control-prev{
+      top:29vw;
+
+  }
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .textWritten {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+    line-height: 70px;
+
+        
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .textWritten{
+        font-style: normal;
+        font-size: 140px;
+        font-weight: 700;
+        line-height: 132px;
+    }
+  }
+  

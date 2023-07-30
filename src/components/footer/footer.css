@@ -1,0 +1,78 @@
+.footer {
+    background: #001A1A;
+    padding: 1% 11%;
+}
+
+.footerContact {
+    padding: 48px;
+}
+
+
+.cardButton {
+    border-radius: 8px;
+    border: 1px solid var(--green, #008080);
+    display: inline-flex;
+    padding: 9px 24px 11px 24px;
+    justify-content: center;
+    align-items: center;
+    color: var(--green, #008080);
+    text-align: center;
+    font-family: IBM Plex Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.cardButton:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: scale(1.06);
+    background-color: var(--green, #008080);
+    color: aliceblue;
+    transition: transform 0.5s;
+}
+
+.profilePic:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transform: scale(1.06);
+    transition: transform 0.5s;
+
+}
+
+
+.footerCardTitle {
+    color: var(--dark, #001A1A);
+    font-family: IBM Plex Mono;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+
+.footerTitle {
+    font-family: IBM Plex Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+@media screen and (max-width:752px) {
+    .contactSection {
+        flex-wrap: col;
+    }
+}
+
+
+@media screen and (max-width:611px) {
+    .footerContact {
+        padding: 40px 12px 100px 12px;
+
+    }
+
+    .footer {
+        background: #001A1A;
+        padding: 1% 4%;
+    }
+}

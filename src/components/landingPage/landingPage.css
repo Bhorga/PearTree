@@ -1,0 +1,22 @@
+.bottom-card-div p{
+    margin-bottom: 0;
+}
+
+
+.upperCardSection{
+    overflow-x: auto;
+    padding: 0 48px;
+}
+
+
+@media screen and  (min-width: 1124px)  {
+    .lowerCardSection {
+        justify-content: center;
+    }
+  }
+
+  @media screen and (max-width:610px) {
+    .upperCardSection{
+        padding: 0  12px;
+    }
+}
